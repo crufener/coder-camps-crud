@@ -1,0 +1,9 @@
+<h2>List of Movies</h2>
+<ul>
+    <li ng-repeat="movie in vm.movies">
+        {{movie.title}}
+        <a type="button" ui-sref="Edit({id:movie.id})" class="btn btn-warning">Edit</a>
+        <a type="button" ui-sref="Delete({id:movie.id})" class="btn btn-danger">Delete</a>
+    </li>
+</ul>
+<a type="button" class="btn btn-success" ui-sref="Add">Add</a>

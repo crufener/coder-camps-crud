@@ -1,0 +1,12 @@
+<h2>Add a new movie</h2>
+<form class="form" ng-submit="vm.addMovie()">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" class="form-control" ng-model="vm.movieToCreate.title">
+    </div>
+    <div class="form-group">
+        <label for="director">Director:</label>
+        <input type="text" id="director" class="form-control" ng-model="vm.movieToCreate.director">
+    </div>
+    <button class="btn btn-info" type="submit">Add</button>
+</form>
